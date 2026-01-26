@@ -2,9 +2,19 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import helmet from "helmet";
 
 const app = express();
 const httpServer = createServer(app);
+
+// SECURITY: Use Helmet for secure headers
+// Disable CSP in dev to avoid breaking Vite's hot reloading and inline scripts
+app.use(
+  helmet({
+    contentSecurityPolicy: false, 
+    crossOriginEmbedderPolicy: false,
+  })
+);
 
 declare module "http" {
   interface IncomingMessage {
