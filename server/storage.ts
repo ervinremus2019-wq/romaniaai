@@ -1,4 +1,4 @@
-import { type User, type InsertUser } from "../shared/schema";
+import { type User, type InsertUser, type Project, type ComplianceCheck, type StrategyGoal, type Resource } from "../shared/schema";
 import { randomUUID } from "crypto";
 
 export interface IStorage {
@@ -6,26 +6,40 @@ export interface IStorage {
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
   
-  // Missing methods for routes.ts
+  // Strategy Goals
+  getStrategyGoals(): Promise<StrategyGoal[]>;
+  
+  // Projects
+  getProjects(): Promise<Project[]>;
+  getProject(id: number): Promise<Project | undefined>;
+  createProject(project: Partial<Project> & { name: string }): Promise<Project>;
+  
+  // Compliance
+  createComplianceCheck(check: Partial<ComplianceCheck>): Promise<ComplianceCheck>;
+  getComplianceHistory(userId: string): Promise<ComplianceCheck[]>;
+  
+  // Resources
+  getResources(): Promise<Resource[]>;
+  
+  // System
   seedDatabase(): Promise<void>;
-  getStrategyGoals(): Promise<any[]>;
-  getProjects(): Promise<any[]>;
-  getProject(id: number): Promise<any | undefined>;
-  createProject(project: any): Promise<any>;
-  createComplianceCheck(check: any): Promise<any>;
-  getComplianceHistory(userId: string): Promise<any[]>;
-  getResources(): Promise<any[]>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<string, User>;
-  private strategyGoals: any[] = [];
-  private projects: any[] = [];
-  private complianceChecks: any[] = [];
-  private resources: any[] = [];
+  private strategyGoals: Map<number, StrategyGoal>;
+  private projects: Map<number, Project>;
+  private complianceChecks: Map<number, ComplianceCheck>;
+  private resources: Map<number, Resource>;
+  private currentIds: Record<string, number>;
 
   constructor() {
     this.users = new Map();
+    this.strategyGoals = new Map();
+    this.projects = new Map();
+    this.complianceChecks = new Map();
+    this.resources = new Map();
+    this.currentIds = { strategy: 1, projects: 1, compliance: 1, resources: 1 };
   }
 
   async getUser(id: string): Promise<User | undefined> {
@@ -33,9 +47,7 @@ export class MemStorage implements IStorage {
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+    return Array.from(this.users.values()).find(u => u.username === username);
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
@@ -45,45 +57,73 @@ export class MemStorage implements IStorage {
     return user;
   }
 
+  async getStrategyGoals(): Promise<StrategyGoal[]> {
+    return Array.from(this.strategyGoals.values());
+  }
+
+  async getProjects(): Promise<Project[]> {
+    return Array.from(this.projects.values());
+  }
+
+  async getProject(id: number): Promise<Project | undefined> {
+    return this.projects.get(id);
+  }
+
+  async createProject(projectData: Partial<Project> & { name: string }): Promise<Project> {
+    const id = this.currentIds.projects++;
+    const project: Project = {
+      id,
+      name: projectData.name,
+      description: projectData.description ?? null,
+      status: projectData.status ?? "draft",
+      ownerId: projectData.ownerId ?? null,
+      strategyGoalId: projectData.strategyGoalId ?? null,
+      createdAt: new Date(),
+    };
+    this.projects.set(id, project);
+    return project;
+  }
+
+  async createComplianceCheck(checkData: Partial<ComplianceCheck>): Promise<ComplianceCheck> {
+    const id = this.currentIds.compliance++;
+    const check: ComplianceCheck = {
+      id,
+      projectId: checkData.projectId ?? null,
+      projectDescription: checkData.projectDescription ?? "",
+      intendedUse: checkData.intendedUse ?? "",
+      riskLevel: checkData.riskLevel ?? "High",
+      feedback: checkData.feedback ?? "",
+      isProhibited: checkData.isProhibited ?? false,
+      userId: checkData.userId ?? null,
+      timestamp: new Date(),
+    };
+    this.complianceChecks.set(id, check);
+    return check;
+  }
+
+  async getComplianceHistory(userId: string): Promise<ComplianceCheck[]> {
+    return Array.from(this.complianceChecks.values()).filter(c => c.userId === userId);
+  }
+
+  async getResources(): Promise<Resource[]> {
+    return Array.from(this.resources.values());
+  }
+
   async seedDatabase(): Promise<void> {
-    this.strategyGoals = [
-      { id: 1, title: "Enhance AI Safety", description: "Improve national standards for AI safety." }
+    if (this.strategyGoals.size > 0) return;
+
+    const goals: StrategyGoal[] = [
+      { id: 1, title: "AI Research Excellence", description: "Promote world-class AI research in Romania.", priority: "high" },
+      { id: 2, title: "Public Sector AI", description: "Digital transformation of public services using AI.", priority: "medium" },
+      { id: 3, title: "AI Ethics & Safety", description: "Implementation of EU AI Act standards.", priority: "high" }
     ];
-    this.resources = [
-      { id: 1, title: "EU AI Act Guide", url: "https://example.com/guide" }
+    goals.forEach(g => this.strategyGoals.set(g.id, g));
+
+    const res: Resource[] = [
+      { id: 1, title: "EU AI Act - Official Text", url: "https://eur-lex.europa.eu/", category: "Regulation" },
+      { id: 2, title: "Romanian National AI Strategy 2024-2030", url: "#", category: "Strategy" }
     ];
-  }
-
-  async getStrategyGoals(): Promise<any[]> {
-    return this.strategyGoals;
-  }
-
-  async getProjects(): Promise<any[]> {
-    return this.projects;
-  }
-
-  async getProject(id: number): Promise<any | undefined> {
-    return this.projects.find(p => p.id === id);
-  }
-
-  async createProject(project: any): Promise<any> {
-    const newProject = { ...project, id: this.projects.length + 1 };
-    this.projects.push(newProject);
-    return newProject;
-  }
-
-  async createComplianceCheck(check: any): Promise<any> {
-    const newCheck = { ...check, id: this.complianceChecks.length + 1, timestamp: new Date() };
-    this.complianceChecks.push(newCheck);
-    return newCheck;
-  }
-
-  async getComplianceHistory(userId: string): Promise<any[]> {
-    return this.complianceChecks.filter(c => c.userId === userId);
-  }
-
-  async getResources(): Promise<any[]> {
-    return this.resources;
+    res.forEach(r => this.resources.set(r.id, r));
   }
 }
 
