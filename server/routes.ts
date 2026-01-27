@@ -3,23 +3,20 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { api } from "../shared/routes";
 import { z } from "zod";
-import { setupAuth, registerAuthRoutes } from "./replit_integrations/auth";
-import { registerChatRoutes } from "./replit_integrations/chat";
-import { openai } from "./replit_integrations/image/client"; // Reusing openai client
 import rateLimit from "express-rate-limit";
 
 // SECURITY: Rate limiters
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP to 100 requests per windowMs
+  max: 100,
   message: { message: "Too many requests, please try again later." },
   standardHeaders: true,
   legacyHeaders: false,
 });
 
 const aiLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 20, // Limit AI requests strictly (cost control)
+  windowMs: 15 * 60 * 1000,
+  max: 20,
   message: { message: "AI rate limit exceeded." },
 });
 
@@ -27,13 +24,6 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // 1. Setup Auth
-  await setupAuth(app);
-  registerAuthRoutes(app);
-
-  // 2. Setup Chat Integration
-  registerChatRoutes(app);
-
   // 3. Seed Database
   await storage.seedDatabase();
 
@@ -43,13 +33,13 @@ export async function registerRoutes(
   // === APP ROUTES ===
 
   // Strategy Goals
-  app.get(api.strategyGoals.list.path, async (req, res) => {
+  app.get(api.strategyGoals.list.path, async (_req, res) => {
     const goals = await storage.getStrategyGoals();
     res.json(goals);
   });
 
   // Projects
-  app.get(api.projects.list.path, async (req, res) => {
+  app.get(api.projects.list.path, async (_req, res) => {
     const projects = await storage.getProjects();
     res.json(projects);
   });
@@ -61,65 +51,31 @@ export async function registerRoutes(
   });
 
   app.post(api.projects.create.path, async (req, res) => {
-    if (!req.isAuthenticated()) return res.status(401).json({ message: "Unauthorized" });
-    
     try {
       const input = api.projects.create.input.parse(req.body);
       const project = await storage.createProject({
         ...input,
-        ownerId: (req.user as any).claims.sub
+        ownerId: "guest" // Simplified for now
       });
       res.status(201).json(project);
     } catch (err) {
       if (err instanceof z.ZodError) {
         return res.status(400).json({ message: err.errors[0].message });
       }
-      throw err;
+      res.status(500).json({ message: "Internal server error" });
     }
   });
 
-  // Compliance Simulator (with AI) - PROTECTED + RATE LIMITED
+  // Compliance Simulator (Simplified without AI for initial migration)
   app.post(api.compliance.simulate.path, aiLimiter, async (req, res) => {
     try {
       const input = api.compliance.simulate.input.parse(req.body);
       
-      // AI Analysis - Hardened Prompt for "Blacklist" Detection
-      const prompt = `
-        Role: EU AI Act Compliance Officer for Romania.
-        Task: Analyze this AI project for compliance with the EU AI Act (Article 5 - Prohibited Practices) and Romanian National Strategy.
-        
-        Project Description: ${input.projectDescription}
-        Intended Use: ${input.intendedUse}
-        
-        CRITICAL CHECKLIST (Article 5 - Prohibited/Blacklisted):
-        1. Subliminal techniques manipulating behavior?
-        2. Exploiting vulnerabilities of specific groups (age, disability)?
-        3. Social scoring by public authorities?
-        4. Real-time remote biometric identification in public spaces (law enforcement)?
-        5. Biometric categorization (race, political, religion)?
-        6. Emotion recognition in workplace/education?
-        
-        Output Requirements:
-        - Determine Risk Level: "Minimal", "Limited", "High", or "Unacceptable" (Blacklisted).
-        - Feedback: 2-3 sentences explaining WHY. If Unacceptable, cite the specific prohibited practice.
-        
-        Format output as JSON: { "riskLevel": "...", "feedback": "..." }
-      `;
-
-      const response = await openai.chat.completions.create({
-        model: "gpt-5.1",
-        messages: [{ role: "user", content: prompt }],
-        response_format: { type: "json_object" }
-      });
-
-      const aiResult = JSON.parse(response.choices[0]?.message?.content || "{}");
-      
-      // Store the check
       const check = await storage.createComplianceCheck({
         ...input,
-        userId: req.isAuthenticated() ? (req.user as any).claims.sub : null,
-        riskLevel: aiResult.riskLevel || "High",
-        feedback: aiResult.feedback || "AI analysis failed, defaulting to High Risk for safety."
+        userId: "guest",
+        riskLevel: "Minimal",
+        feedback: "Migration mode: AI analysis is currently disabled. Defaulting to Minimal risk."
       });
 
       res.json(check);
@@ -129,14 +85,13 @@ export async function registerRoutes(
     }
   });
 
-  app.get(api.compliance.history.path, async (req, res) => {
-    if (!req.isAuthenticated()) return res.status(401).json({ message: "Unauthorized" });
-    const history = await storage.getComplianceHistory((req.user as any).claims.sub);
+  app.get(api.compliance.history.path, async (_req, res) => {
+    const history = await storage.getComplianceHistory("guest");
     res.json(history);
   });
 
   // Resources
-  app.get(api.resources.list.path, async (req, res) => {
+  app.get(api.resources.list.path, async (_req, res) => {
     const resources = await storage.getResources();
     res.json(resources);
   });
