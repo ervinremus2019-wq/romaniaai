@@ -6,8 +6,8 @@ import { Shield, LayoutDashboard, BookOpen, Plus } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
-  const { data: goals } = useQuery({ queryKey: [api.strategyGoals.list.path] });
-  const { data: projects } = useQuery({ queryKey: [api.projects.list.path] });
+  const { data: goals = [] } = useQuery<any[]>({ queryKey: [api.strategyGoals.list.path] });
+  const { data: projects = [] } = useQuery<any[]>({ queryKey: [api.projects.list.path] });
 
   return (
     <div className="container mx-auto p-6 space-y-8">
@@ -25,7 +25,7 @@ export default function Home() {
             <LayoutDashboard className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold">{projects?.length || 0}</div>
+            <div className="text-2xl font-bold">{projects.length}</div>
           </CardContent>
         </Card>
         <Card className="hover-elevate">
