@@ -34,7 +34,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Production-hardened logging: suppress console in production
 export function log(message: string, source = "express") {
-  if (process.env.NODE_ENV === "production") return;
+  if (process.env.NODE_ENV === "production" || import.meta.env?.PROD) return;
   const formattedTime = new Date().toLocaleTimeString("en-US", {
     hour: "numeric",
     minute: "2-digit",
