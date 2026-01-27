@@ -9,10 +9,11 @@ const httpServer = createServer(app);
 
 // SECURITY: Use Helmet for secure headers
 // Disable CSP in dev to avoid breaking Vite's hot reloading and inline scripts
+// However, ensure a baseline security posture even in dev
 app.use(
   helmet({
-    contentSecurityPolicy: false, 
-    crossOriginEmbedderPolicy: false,
+    contentSecurityPolicy: process.env.NODE_ENV === "production",
+    crossOriginEmbedderPolicy: process.env.NODE_ENV === "production",
   })
 );
 
