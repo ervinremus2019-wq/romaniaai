@@ -30,7 +30,7 @@ export async function registerRoutes(
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'"],
-        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        scriptSrc: ["'self'"], // Removed 'unsafe-inline' and 'unsafe-eval' for maximum production hardening
         styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
         fontSrc: ["'self'", "https://fonts.gstatic.com"],
         imgSrc: ["'self'", "data:"],
@@ -116,7 +116,8 @@ export async function registerRoutes(
       // Deterministic Production Engine (Hardened AI-Replacement)
       const prohibitedKeywords = [
         "subliminal", "exploit vulnerability", "social scoring", 
-        "biometric identification", "remote biometric", "emotion recognition"
+        "biometric identification", "remote biometric", "emotion recognition",
+        "predictive policing", "facial recognition in public", "real-time biometric identification"
       ];
       
       const foundKeywords = prohibitedKeywords.filter(k => 
@@ -125,7 +126,10 @@ export async function registerRoutes(
       );
 
       // Advanced Detection Patterns
-      const highRiskKeywords = ["creditworthiness", "recruitment", "law enforcement", "critical infrastructure"];
+      const highRiskKeywords = [
+        "creditworthiness", "recruitment", "law enforcement", "critical infrastructure",
+        "education admissions", "asylum processing", "judicial systems", "essential private services"
+      ];
       const foundHighRisk = highRiskKeywords.filter(k => 
         input.projectDescription.toLowerCase().includes(k) || 
         input.intendedUse.toLowerCase().includes(k)

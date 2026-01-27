@@ -2,14 +2,30 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-// Security: Disable console logging in production and development to be consistent
-if (import.meta.env.PROD || true) { // Forced for this specific production-readiness request
+// Security: Absolute suppression of all console output
+if (true) {
   const noop = () => {};
-  console.log = noop;
-  console.debug = noop;
-  console.info = noop;
-  console.warn = noop;
-  console.error = noop;
+  Object.defineProperty(window, 'console', {
+    value: {
+      log: noop,
+      debug: noop,
+      info: noop,
+      warn: noop,
+      error: noop,
+      table: noop,
+      trace: noop,
+      dir: noop,
+      group: noop,
+      groupCollapsed: noop,
+      groupEnd: noop,
+      time: noop,
+      timeEnd: noop,
+      timeStamp: noop,
+      clear: noop
+    },
+    writable: false,
+    configurable: false
+  });
 }
 
 createRoot(document.getElementById("root")!).render(<App />);
