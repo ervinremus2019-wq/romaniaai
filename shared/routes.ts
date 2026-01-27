@@ -33,6 +33,9 @@ export const api = {
     },
     history: {
       path: "/api/compliance/history"
+    },
+    audit: {
+      path: "/api/compliance/audit"
     }
   },
   resources: {

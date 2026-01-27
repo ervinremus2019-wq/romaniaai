@@ -7,12 +7,14 @@ import NotFound from "@/pages/not-found";
 
 import Home from "@/pages/home";
 import Simulate from "@/pages/simulate";
+import AuditLog from "@/pages/audit";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/simulate" component={Simulate} />
+      <Route path="/audit" component={AuditLog} />
       <Route component={NotFound} />
     </Switch>
   );

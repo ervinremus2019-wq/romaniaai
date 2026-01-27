@@ -69,7 +69,13 @@ export default function Home() {
                 Start Simulation
               </Link>
             </Button>
-            <Button className="w-full justify-start gap-2" variant="outline">
+            <Button className="w-full justify-start gap-2" variant="outline" asChild>
+              <Link href="/audit">
+                <BookOpen className="h-4 w-4" />
+                View Audit Trail
+              </Link>
+            </Button>
+            <Button className="w-full justify-start gap-2" variant="ghost">
               <Plus className="h-4 w-4" />
               New Project
             </Button>

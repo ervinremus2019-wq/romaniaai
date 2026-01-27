@@ -33,7 +33,6 @@ export const complianceChecks = pgTable("compliance_checks", {
   intendedUse: text("intended_use").notNull(),
   riskLevel: text("risk_level").notNull(),
   feedback: text("feedback").notNull(),
-  isProhibited: boolean("is_prohibited").default(false),
   userId: varchar("user_id").references(() => users.id),
   timestamp: timestamp("timestamp").defaultNow(),
 });
@@ -59,6 +58,13 @@ export const insertComplianceCheckSchema = createInsertSchema(complianceChecks).
   id: true,
   timestamp: true,
 } as any);
+
+export type AuditLog = {
+  id: number;
+  action: string;
+  details: string;
+  timestamp: Date;
+};
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
