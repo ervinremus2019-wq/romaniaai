@@ -1,4 +1,4 @@
-import { type User, type InsertUser, type Project, type ComplianceCheck, type StrategyGoal, type Resource } from "../shared/schema";
+import { type User, type InsertUser, type Project, type ComplianceCheck, type StrategyGoal, type Resource, type AuditLog } from "../shared/schema";
 import { randomUUID } from "crypto";
 
 export interface IStorage {
@@ -18,6 +18,10 @@ export interface IStorage {
   createComplianceCheck(check: Partial<ComplianceCheck>): Promise<ComplianceCheck>;
   getComplianceHistory(userId: string): Promise<ComplianceCheck[]>;
   
+  // Audit Logs
+  createAuditLog(action: string, details: string): Promise<AuditLog>;
+  getAuditLogs(): Promise<AuditLog[]>;
+  
   // Resources
   getResources(): Promise<Resource[]>;
   
@@ -31,6 +35,7 @@ export class MemStorage implements IStorage {
   private projects: Map<number, Project>;
   private complianceChecks: Map<number, ComplianceCheck>;
   private resources: Map<number, Resource>;
+  private auditLogs: Map<number, AuditLog>;
   private currentIds: Record<string, number>;
 
   constructor() {
@@ -39,7 +44,19 @@ export class MemStorage implements IStorage {
     this.projects = new Map();
     this.complianceChecks = new Map();
     this.resources = new Map();
-    this.currentIds = { strategy: 1, projects: 1, compliance: 1, resources: 1 };
+    this.auditLogs = new Map();
+    this.currentIds = { strategy: 1, projects: 1, compliance: 1, resources: 1, audit: 1 };
+  }
+
+  async createAuditLog(action: string, details: string): Promise<AuditLog> {
+    const id = this.currentIds.audit++;
+    const log: AuditLog = { id, action, details, timestamp: new Date() };
+    this.auditLogs.set(id, log);
+    return log;
+  }
+
+  async getAuditLogs(): Promise<AuditLog[]> {
+    return Array.from(this.auditLogs.values()).sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime());
   }
 
   async getUser(id: string): Promise<User | undefined> {
@@ -93,7 +110,6 @@ export class MemStorage implements IStorage {
       intendedUse: checkData.intendedUse ?? "",
       riskLevel: checkData.riskLevel ?? "High",
       feedback: checkData.feedback ?? "",
-      isProhibited: checkData.isProhibited ?? false,
       userId: checkData.userId ?? null,
       timestamp: new Date(),
     };

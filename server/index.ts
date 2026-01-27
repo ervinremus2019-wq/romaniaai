@@ -100,7 +100,6 @@ app.use((req, res, next) => {
     {
       port,
       host: "0.0.0.0",
-      // Remove reusePort for broader production compatibility
     },
     () => {
       // Silence server startup message for maximum stealth
