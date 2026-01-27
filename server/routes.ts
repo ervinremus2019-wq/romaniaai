@@ -25,7 +25,7 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // Hardened Security Headers
+  // Hardened Security Headers with production-ready defaults
   app.use(helmet({
     contentSecurityPolicy: {
       directives: {
@@ -34,11 +34,20 @@ export async function registerRoutes(
         styleSrc: ["'self'", "'unsafe-inline'"],
         imgSrc: ["'self'", "data:"],
         connectSrc: ["'self'"],
+        frameAncestors: ["'none'"],
+        formAction: ["'self'"],
+        upgradeInsecureRequests: [],
       },
     },
-    hsts: true,
+    hsts: {
+      maxAge: 31536000,
+      includeSubDomains: true,
+      preload: true,
+    },
     noSniff: true,
-    referrerPolicy: { policy: "strict-origin-when-cross-origin" },
+    referrerPolicy: { policy: "no-referrer" },
+    xssFilter: true,
+    frameguard: { action: "deny" },
   }));
 
   // Seed Database

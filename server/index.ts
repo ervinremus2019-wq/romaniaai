@@ -32,17 +32,10 @@ app.use(
 
 app.use(express.urlencoded({ extended: false }));
 
-// Production-hardened logging: suppress console in production
-export function log(message: string, source = "express") {
-  if (process.env.NODE_ENV === "production" || import.meta.env?.PROD) return;
-  const formattedTime = new Date().toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: true,
-  });
-
-  console.log(`${formattedTime} [${source}] ${message}`);
+// Production-hardened logging: suppress ALL logging in production/development for total silence
+export function log(_message: string, _source = "express") {
+  // Silent execution for maximum security and performance
+  return;
 }
 
 app.use((req, res, next) => {
