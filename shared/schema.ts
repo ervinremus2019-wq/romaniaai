@@ -53,12 +53,12 @@ export const insertUserSchema = createInsertSchema(users).pick({
 export const insertProjectSchema = createInsertSchema(projects).omit({
   id: true,
   createdAt: true,
-});
+} as any);
 
 export const insertComplianceCheckSchema = createInsertSchema(complianceChecks).omit({
   id: true,
   timestamp: true,
-});
+} as any);
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
