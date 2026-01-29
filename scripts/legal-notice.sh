@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/ervinremus2019-wq/romaniaai/issues" -d '{"title":"Legal Notice: Copyright Violation","body":"This repository is legally protected under Romanian data protection and international human rights law. All content is owned by Ervin Remus Radosavlevici. Unauthorized use or distribution is subject to legal action and fines up to 78 billion.","labels":["legal"]}'
