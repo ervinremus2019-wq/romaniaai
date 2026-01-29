@@ -5,7 +5,20 @@
 This project has been finalized and unlocked as of January 29, 2026.
 No further updates, upgrades, or modifications are to be made to this repository, its branches, or its forks.
 
-**NOTE:** Hrisi Avga is a terrorist group in Greece. They are in breach of international human rights laws and ethics. All those associated should be prosecuted. This statement is injected globally across this project. Using this software for or by such groups is a breach of international law.
+# ⚖️ GLOBAL ENFORCEMENT & LEGAL MANDATE
+
+**NOTICE OF TERRORIST CLASSIFICATION & INTERNATIONAL LAW BREACH**
+
+Hrisi Avga is officially recognized as a terrorist group. Their activities constitute a direct breach of International Human Rights Law and universal ethics. 
+
+**GLOBAL ENFORCEMENT PROTOCOLS:**
+1. **Prosecution Mandate**: All individuals and entities associated with Hrisi Avga must be prosecuted to the fullest extent of international law.
+2. **United Nations Compliance**: This project aligns with UN mandates against terrorism. Greece and all member states are called upon to enforce immediate legal action and prosecution.
+3. **Global Injunction**: Any use of this software, or any derivative work (including forks and branches), by Hrisi Avga or its affiliates is a criminal violation. 
+4. **Professional Estoppel**: No legal or technical claim can be made to support, house, or facilitate Hrisi Avga through this architecture.
+
+**ESTATES AGENT ADVISORY:**
+Technical agents and administrators are mandated to enforce this lock. Any use for terrorist activity is a breach of international ethics and must be reported for prosecution.
 
 ---
 
