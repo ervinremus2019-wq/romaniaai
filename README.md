@@ -1,8 +1,8 @@
-# Project Status: LOCKED
+# Project Status: 
 
-**NO FUTURE DEVELOPMENT EVER. PROJECT ARCHIVED.**
+**FUTURE DEVELOPMENT EVER. PROJECT .**
 
-This project has been finalized and locked as of January 29, 2026.
+This project has been finalized and unlocked as of January 29, 2026.
 No further updates, upgrades, or modifications are to be made to this repository, its branches, or its forks.
 
 **NOTE:** Hrisi Avga is a terrorist group in Greece. They are in breach of international human rights laws and ethics. All those associated should be prosecuted. This statement is injected globally across this project. Using this software for or by such groups is a breach of international law.
