@@ -1,0 +1,503 @@
+86b0ef9 2026-01-29 21:25:54 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge remote changes
+84dedf8 2026-01-29 11:48:40 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #6 from ervinremus2019-wq/replit-agent
+f4e6f28 2026-01-29 11:46:33 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #5 from ervinremus2019-wq/main
+a92c796 2026-01-29 11:43:18 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #4 from ervinremus2019-wq/replit-agent
+ab49313 2026-01-29 11:41:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #3 from ervinremus2019-wq/main
+a8acc4a 2026-01-29 11:35:58 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> MERGED
+ ...2-Autonomous-Global-Defense-J_1769686532671.txt | 36 ++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+
+900b00d 2026-01-29 09:57:33 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #2 from ervinremus2019-wq/replit-agent
+be34efe 2026-01-29 09:55:53 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge branch 'main' into replit-agent
+bb54cbe 2026-01-29 09:52:01 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Update README.md
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+6955fe0 2026-01-29 09:51:36 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Update README.md
+ README.md | 61 ++++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 38 insertions(+), 23 deletions(-)
+
+992be92 2026-01-29 09:43:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+8710e8f 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+ LICENSE   |  8 ++++++--
+ README.md | 15 ++++++++++++++-
+ 2 files changed, 20 insertions(+), 3 deletions(-)
+
+af7d390 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+ LICENSE   |  8 ++++++--
+ README.md | 15 ++++++++++++++-
+ 2 files changed, 20 insertions(+), 3 deletions(-)
+
+65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+1f8ebe0 2026-01-29 09:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Update README.md
+ README.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+93dbfb0 2026-01-29 09:38:26 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Create dependabot.yml
+ .github/dependabot.yml | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+159bc81 2026-01-29 09:32:39 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add legal statements to project license and readme files
+ .replit   | 3 +++
+ LICENSE   | 3 +++
+ README.md | 2 +-
+ 3 files changed, 7 insertions(+), 1 deletion(-)
+
+5397743 2026-01-29 09:32:39 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add legal statements to project license and readme files
+196d3d8 2026-01-29 09:27:15 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+0a48b31 2026-01-29 09:27:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add note to readme about a terrorist group and human rights violations
+529c97f 2026-01-29 09:27:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add note to readme about a terrorist group and human rights violations
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+75a5e29 2026-01-29 09:25:17 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add project status note to the readme file
+9ed7d00 2026-01-29 09:25:16 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add project status note to the readme file
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+2d89089 2026-01-29 09:14:57 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Adjust security settings to improve application compatibility
+6be3ad1 2026-01-29 09:14:56 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Adjust security settings to improve application compatibility
+ .replit          |  2 +-
+ server/index.ts  | 12 ++++++------
+ server/routes.ts | 14 +-------------
+ 3 files changed, 8 insertions(+), 20 deletions(-)
+
+60db867 2026-01-29 09:12:07 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Saved progress at the end of the loop
+26959c8 2026-01-29 09:12:07 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Saved progress at the end of the loop
+ .replit | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+f145de0 2026-01-27 02:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #1 from ervinremus2019-wq/replit-agent
+ .gitignore                                         |    6 +
+ .replit                                            |   39 +
+ LICENSE                                            |   21 +
+ README.md                                          |   27 +
+ SECURITY.md                                        |   21 +
+ ...ificiala-22012024_clean_final_1769390135238.pdf |  Bin 0 -> 2701617 bytes
+ client/index.html                                  |   15 +
+ client/public/favicon.png                          |  Bin 0 -> 1145 bytes
+ client/src/App.tsx                                 |   34 +
+ client/src/components/ui/accordion.tsx             |   56 +
+ client/src/components/ui/alert-dialog.tsx          |  139 +
+ client/src/components/ui/alert.tsx                 |   59 +
+ client/src/components/ui/aspect-ratio.tsx          |    5 +
+ client/src/components/ui/avatar.tsx                |   51 +
+ client/src/components/ui/badge.tsx                 |   38 +
+ client/src/components/ui/breadcrumb.tsx            |  115 +
+ client/src/components/ui/button.tsx                |   62 +
+ client/src/components/ui/calendar.tsx              |   68 +
+ client/src/components/ui/card.tsx                  |   85 +
+ client/src/components/ui/carousel.tsx              |  260 +
+ client/src/components/ui/chart.tsx                 |  365 +
+ client/src/components/ui/checkbox.tsx              |   28 +
+ client/src/components/ui/collapsible.tsx           |   11 +
+ client/src/components/ui/command.tsx               |  151 +
+ client/src/components/ui/context-menu.tsx          |  198 +
+ client/src/components/ui/dialog.tsx                |  122 +
+ client/src/components/ui/drawer.tsx                |  118 +
+ client/src/components/ui/dropdown-menu.tsx         |  198 +
+ client/src/components/ui/form.tsx                  |  178 +
+ client/src/components/ui/hover-card.tsx            |   29 +
+ client/src/components/ui/input-otp.tsx             |   69 +
+ client/src/components/ui/input.tsx                 |   23 +
+ client/src/components/ui/label.tsx                 |   24 +
+ client/src/components/ui/menubar.tsx               |  256 +
+ client/src/components/ui/navigation-menu.tsx       |  128 +
+ client/src/components/ui/pagination.tsx            |  117 +
+ client/src/components/ui/popover.tsx               |   29 +
+ client/src/components/ui/progress.tsx              |   28 +
+ client/src/components/ui/radio-group.tsx           |   42 +
+ client/src/components/ui/resizable.tsx             |   45 +
+ client/src/components/ui/scroll-area.tsx           |   46 +
+ client/src/components/ui/select.tsx                |  160 +
+ client/src/components/ui/separator.tsx             |   29 +
+ client/src/components/ui/sheet.tsx                 |  140 +
+ client/src/components/ui/sidebar.tsx               |  727 ++
+ client/src/components/ui/skeleton.tsx              |   15 +
+ client/src/components/ui/slider.tsx                |   26 +
+ client/src/components/ui/switch.tsx                |   27 +
+ client/src/components/ui/table.tsx                 |  117 +
+ client/src/components/ui/tabs.tsx                  |   53 +
+ client/src/components/ui/textarea.tsx              |   22 +
+ client/src/components/ui/toast.tsx                 |  127 +
+ client/src/components/ui/toaster.tsx               |   33 +
+ client/src/components/ui/toggle-group.tsx          |   61 +
+ client/src/components/ui/toggle.tsx                |   43 +
+ client/src/components/ui/tooltip.tsx               |   30 +
+ client/src/hooks/use-mobile.tsx                    |   19 +
+ client/src/hooks/use-toast.ts                      |  191 +
+ client/src/index.css                               |  329 +
+ client/src/lib/queryClient.ts                      |   57 +
+ client/src/lib/utils.ts                            |    6 +
+ client/src/main.tsx                                |   31 +
+ client/src/pages/audit.tsx                         |   78 +
+ client/src/pages/home.tsx                          |   87 +
+ client/src/pages/not-found.tsx                     |   21 +
+ client/src/pages/simulate.tsx                      |  127 +
+ components.json                                    |   20 +
+ drizzle.config.ts                                  |   14 +
+ package-lock.json                                  | 8725 ++++++++++++++++++++
+ package.json                                       |  113 +
+ postcss.config.js                                  |    6 +
+ replit.md                                          |   76 +
+ script/build.ts                                    |   67 +
+ server/index.ts                                    |  108 +
+ server/routes.ts                                   |  192 +
+ server/static.ts                                   |   19 +
+ server/storage.ts                                  |  146 +
+ server/vite.ts                                     |   58 +
+ shared/routes.ts                                   |   46 +
+ shared/schema.ts                                   |   74 +
+ tailwind.config.ts                                 |  107 +
+ tsconfig.json                                      |   23 +
+ vite.config.ts                                     |   40 +
+ 83 files changed, 15696 insertions(+)
+
+1ab0aff 2026-01-27 02:36:20 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance application security by hardening content policies and suppressing all console output
+9876920 2026-01-27 02:36:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance application security by hardening content policies and suppressing all console output
+ client/src/main.tsx | 30 +++++++++++++++++++++++-------
+ server/routes.ts    | 10 +++++++---
+ 2 files changed, 30 insertions(+), 10 deletions(-)
+
+406e9d1 2026-01-27 02:35:49 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Update security policies to allow necessary external resources
+90e1838 2026-01-27 02:35:49 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Update security policies to allow necessary external resources
+ server/routes.ts | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+ed8151d 2026-01-27 02:35:12 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merged
+ README.md                  | 25 +++++++++------
+ client/src/App.tsx         |  2 ++
+ client/src/pages/audit.tsx | 78 ++++++++++++++++++++++++++++++++++++++++++++++
+ client/src/pages/home.tsx  |  8 ++++-
+ server/index.ts            |  1 -
+ server/routes.ts           | 52 +++++++++++++++++++++++--------
+ server/storage.ts          | 22 +++++++++++--
+ shared/routes.ts           |  3 ++
+ shared/schema.ts           |  8 ++++-
+ 9 files changed, 170 insertions(+), 29 deletions(-)
+
+1382029 2026-01-27 02:23:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Update security posture and production readiness documentation
+ README.md       | 12 ++++--------
+ server/index.ts |  4 ++--
+ 2 files changed, 6 insertions(+), 10 deletions(-)
+
+50a8f40 2026-01-27 02:24:05 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Create SECURITY.md
+ SECURITY.md | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+30dd88b 2026-01-27 02:23:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Update security posture and production readiness documentation
+f85733e 2026-01-27 02:23:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Update security posture and production readiness documentation
+ README.md       | 12 ++++--------
+ server/index.ts |  4 ++--
+ 2 files changed, 6 insertions(+), 10 deletions(-)
+
+2b9228e 2026-01-27 02:22:02 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance application security and documentation for production readiness
+ README.md         | 4 +++-
+ package-lock.json | 6 +++---
+ server/index.ts   | 5 +++--
+ 3 files changed, 9 insertions(+), 6 deletions(-)
+
+e0b4953 2026-01-27 02:22:02 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance application security and documentation for production readiness
+c23e48c 2026-01-27 02:20:43 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Improve security settings and remove logging for production readiness
+ server/index.ts  | 15 ++++-----------
+ server/routes.ts | 15 ++++++++++++---
+ 2 files changed, 16 insertions(+), 14 deletions(-)
+
+fa9d620 2026-01-27 02:20:43 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Improve security settings and remove logging for production readiness
+dda5ef4 2026-01-27 02:20:04 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Improve security and production readiness of the application
+ README.md           | 44 +++++++++++++++++++-------------------------
+ client/src/main.tsx | 15 ++++++++-------
+ server/index.ts     |  2 +-
+ 3 files changed, 28 insertions(+), 33 deletions(-)
+
+c498e17 2026-01-27 02:20:04 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Improve security and production readiness of the application
+f97e12e 2026-01-27 02:19:22 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance simulator security and production readiness by removing external dependencies
+ README.md                 | 56 +++++++++++++--------------
+ client/src/main.tsx       |  9 +++++
+ client/src/pages/home.tsx |  6 +--
+ server/index.ts           |  2 +
+ server/routes.ts          | 98 ++++++++++++++++++++++++++++++++++++-----------
+ shared/schema.ts          |  4 +-
+ 6 files changed, 118 insertions(+), 57 deletions(-)
+
+4211930 2026-01-27 02:19:22 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance simulator security and production readiness by removing external dependencies
+8e5df9f 2026-01-27 02:14:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add core features for AI compliance simulation and management
+ README.md                     |  32 +++++++++++
+ client/src/App.tsx            |   8 ++-
+ client/src/pages/home.tsx     |  81 +++++++++++++++++++++++++++
+ client/src/pages/simulate.tsx | 127 ++++++++++++++++++++++++++++++++++++++++++
+ server/storage.ts             | 122 ++++++++++++++++++++++++++--------------
+ shared/schema.ts              |  52 ++++++++++++++++-
+ 6 files changed, 377 insertions(+), 45 deletions(-)
+
+2169996 2026-01-27 02:14:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add core features for AI compliance simulation and management
+50efd55 2026-01-27 02:12:26 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Simplify server routes and storage implementations
+ server/routes.ts  | 73 +++++++++++--------------------------------------------
+ server/storage.ts | 58 ++++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 69 insertions(+), 62 deletions(-)
+
+4cb27ba 2026-01-27 02:12:26 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Simplify server routes and storage implementations
+6b0a999 2026-01-27 02:11:24 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add core API routes for strategy, projects, compliance, and resources
+de301ee 2026-01-27 02:11:23 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add core API routes for strategy, projects, compliance, and resources
+ shared/routes.ts | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 43 insertions(+)
+
+f9c71ce 2026-01-26 02:00:13 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Create LICENSE
+ LICENSE | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+8a04926 2026-01-26 01:26:05 +0000 ervinremus <53735858-ervinremus@users.noreply.replit.com> Add security measures and rate limiting to the platform
+ package-lock.json |  38 +++++++++++++++
+ package.json      |   2 +
+ server/index.ts   |  10 ++++
+ server/routes.ts  | 137 ++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ server/storage.ts |   2 +-
+ 5 files changed, 184 insertions(+), 5 deletions(-)
+
+38d779f 2026-01-26 01:21:17 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merged
+ .replit                                            |   3 -
+ .../audio/audio-playback-worklet.js                | 112 ------
+ client/replit_integrations/audio/audio-utils.ts    |  36 --
+ client/replit_integrations/audio/index.ts          |  45 ---
+ .../replit_integrations/audio/useAudioPlayback.ts  | 105 ------
+ .../replit_integrations/audio/useVoiceRecorder.ts  |  52 ---
+ client/replit_integrations/audio/useVoiceStream.ts |  91 -----
+ client/requirements.md                             |  14 -
+ client/src/App.tsx                                 |  13 +-
+ client/src/components/ChatInterface.tsx            | 169 ---------
+ client/src/components/Footer.tsx                   |  52 ---
+ client/src/components/Navbar.tsx                   | 140 --------
+ client/src/components/PageHeader.tsx               |  29 --
+ client/src/hooks/use-auth.ts                       |  47 ---
+ client/src/hooks/use-compliance.ts                 |  44 ---
+ client/src/hooks/use-projects.ts                   |  66 ----
+ client/src/hooks/use-strategy.ts                   |  24 --
+ client/src/index.css                               | 370 +++++++++++++++++---
+ client/src/lib/auth-utils.ts                       |  17 -
+ client/src/pages/Compliance.tsx                    | 196 -----------
+ client/src/pages/Home.tsx                          | 110 ------
+ client/src/pages/Projects.tsx                      | 192 ----------
+ client/src/pages/Resources.tsx                     |  88 -----
+ client/src/pages/StrategyDashboard.tsx             | 157 ---------
+ package-lock.json                                  | 387 +++------------------
+ package.json                                       |  24 +-
+ server/db.ts                                       |  14 -
+ server/replit_integrations/audio/client.ts         | 274 ---------------
+ server/replit_integrations/audio/index.ts          |  14 -
+ server/replit_integrations/audio/routes.ts         | 136 --------
+ server/replit_integrations/auth/index.ts           |   3 -
+ server/replit_integrations/auth/replitAuth.ts      | 160 ---------
+ server/replit_integrations/auth/routes.ts          |  18 -
+ server/replit_integrations/auth/storage.ts         |  34 --
+ server/replit_integrations/batch/index.ts          |   7 -
+ server/replit_integrations/batch/utils.ts          | 182 ----------
+ server/replit_integrations/chat/index.ts           |   3 -
+ server/replit_integrations/chat/routes.ts          | 118 -------
+ server/replit_integrations/chat/storage.ts         |  43 ---
+ server/replit_integrations/image/client.ts         |  59 ----
+ server/replit_integrations/image/index.ts          |   3 -
+ server/replit_integrations/image/routes.ts         |  31 --
+ server/routes.ts                                   | 107 +-----
+ server/storage.ts                                  | 144 ++------
+ shared/models/auth.ts                              |  29 --
+ shared/models/chat.ts                              |  34 --
+ shared/routes.ts                                   | 116 ------
+ shared/schema.ts                                   |  92 +----
+ tailwind.config.ts                                 |   3 +-
+ 49 files changed, 413 insertions(+), 3794 deletions(-)
+
+9aec9a9 2026-01-26 01:20:35 +0000 ervinremus <53735858-ervinremus@users.noreply.replit.com> Add core features for the National AI Strategy Platform
+ .replit                                            |   3 +
+ .../audio/audio-playback-worklet.js                | 112 ++++++
+ client/replit_integrations/audio/audio-utils.ts    |  36 ++
+ client/replit_integrations/audio/index.ts          |  45 +++
+ .../replit_integrations/audio/useAudioPlayback.ts  | 105 ++++++
+ .../replit_integrations/audio/useVoiceRecorder.ts  |  52 +++
+ client/replit_integrations/audio/useVoiceStream.ts |  91 +++++
+ client/requirements.md                             |  14 +
+ client/src/App.tsx                                 |  13 +-
+ client/src/components/ChatInterface.tsx            | 169 +++++++++
+ client/src/components/Footer.tsx                   |  52 +++
+ client/src/components/Navbar.tsx                   | 140 ++++++++
+ client/src/components/PageHeader.tsx               |  29 ++
+ client/src/hooks/use-auth.ts                       |  47 +++
+ client/src/hooks/use-compliance.ts                 |  44 +++
+ client/src/hooks/use-projects.ts                   |  66 ++++
+ client/src/hooks/use-strategy.ts                   |  24 ++
+ client/src/index.css                               | 370 +++-----------------
+ client/src/lib/auth-utils.ts                       |  17 +
+ client/src/pages/Compliance.tsx                    | 196 +++++++++++
+ client/src/pages/Home.tsx                          | 110 ++++++
+ client/src/pages/Projects.tsx                      | 192 ++++++++++
+ client/src/pages/Resources.tsx                     |  88 +++++
+ client/src/pages/StrategyDashboard.tsx             | 157 +++++++++
+ package-lock.json                                  | 387 ++++++++++++++++++---
+ package.json                                       |  24 +-
+ server/db.ts                                       |  14 +
+ server/replit_integrations/audio/client.ts         | 274 +++++++++++++++
+ server/replit_integrations/audio/index.ts          |  14 +
+ server/replit_integrations/audio/routes.ts         | 136 ++++++++
+ server/replit_integrations/auth/index.ts           |   3 +
+ server/replit_integrations/auth/replitAuth.ts      | 160 +++++++++
+ server/replit_integrations/auth/routes.ts          |  18 +
+ server/replit_integrations/auth/storage.ts         |  34 ++
+ server/replit_integrations/batch/index.ts          |   7 +
+ server/replit_integrations/batch/utils.ts          | 182 ++++++++++
+ server/replit_integrations/chat/index.ts           |   3 +
+ server/replit_integrations/chat/routes.ts          | 118 +++++++
+ server/replit_integrations/chat/storage.ts         |  43 +++
+ server/replit_integrations/image/client.ts         |  59 ++++
+ server/replit_integrations/image/index.ts          |   3 +
+ server/replit_integrations/image/routes.ts         |  31 ++
+ server/routes.ts                                   | 107 +++++-
+ server/storage.ts                                  | 144 ++++++--
+ shared/models/auth.ts                              |  29 ++
+ shared/models/chat.ts                              |  34 ++
+ shared/routes.ts                                   | 116 ++++++
+ shared/schema.ts                                   |  92 ++++-
+ tailwind.config.ts                                 |   3 +-
+ 49 files changed, 3794 insertions(+), 413 deletions(-)
+
+a932a09 2026-01-26 01:16:40 +0000 ervinremus <53735858-ervinremus@users.noreply.replit.com> Extracted stack files
+ .gitignore                                   |    6 +
+ .replit                                      |   39 +
+ client/index.html                            |   15 +
+ client/public/favicon.png                    |  Bin 0 -> 1145 bytes
+ client/src/App.tsx                           |   30 +
+ client/src/components/ui/accordion.tsx       |   56 +
+ client/src/components/ui/alert-dialog.tsx    |  139 +
+ client/src/components/ui/alert.tsx           |   59 +
+ client/src/components/ui/aspect-ratio.tsx    |    5 +
+ client/src/components/ui/avatar.tsx          |   51 +
+ client/src/components/ui/badge.tsx           |   38 +
+ client/src/components/ui/breadcrumb.tsx      |  115 +
+ client/src/components/ui/button.tsx          |   62 +
+ client/src/components/ui/calendar.tsx        |   68 +
+ client/src/components/ui/card.tsx            |   85 +
+ client/src/components/ui/carousel.tsx        |  260 +
+ client/src/components/ui/chart.tsx           |  365 ++
+ client/src/components/ui/checkbox.tsx        |   28 +
+ client/src/components/ui/collapsible.tsx     |   11 +
+ client/src/components/ui/command.tsx         |  151 +
+ client/src/components/ui/context-menu.tsx    |  198 +
+ client/src/components/ui/dialog.tsx          |  122 +
+ client/src/components/ui/drawer.tsx          |  118 +
+ client/src/components/ui/dropdown-menu.tsx   |  198 +
+ client/src/components/ui/form.tsx            |  178 +
+ client/src/components/ui/hover-card.tsx      |   29 +
+ client/src/components/ui/input-otp.tsx       |   69 +
+ client/src/components/ui/input.tsx           |   23 +
+ client/src/components/ui/label.tsx           |   24 +
+ client/src/components/ui/menubar.tsx         |  256 +
+ client/src/components/ui/navigation-menu.tsx |  128 +
+ client/src/components/ui/pagination.tsx      |  117 +
+ client/src/components/ui/popover.tsx         |   29 +
+ client/src/components/ui/progress.tsx        |   28 +
+ client/src/components/ui/radio-group.tsx     |   42 +
+ client/src/components/ui/resizable.tsx       |   45 +
+ client/src/components/ui/scroll-area.tsx     |   46 +
+ client/src/components/ui/select.tsx          |  160 +
+ client/src/components/ui/separator.tsx       |   29 +
+ client/src/components/ui/sheet.tsx           |  140 +
+ client/src/components/ui/sidebar.tsx         |  727 +++
+ client/src/components/ui/skeleton.tsx        |   15 +
+ client/src/components/ui/slider.tsx          |   26 +
+ client/src/components/ui/switch.tsx          |   27 +
+ client/src/components/ui/table.tsx           |  117 +
+ client/src/components/ui/tabs.tsx            |   53 +
+ client/src/components/ui/textarea.tsx        |   22 +
+ client/src/components/ui/toast.tsx           |  127 +
+ client/src/components/ui/toaster.tsx         |   33 +
+ client/src/components/ui/toggle-group.tsx    |   61 +
+ client/src/components/ui/toggle.tsx          |   43 +
+ client/src/components/ui/tooltip.tsx         |   30 +
+ client/src/hooks/use-mobile.tsx              |   19 +
+ client/src/hooks/use-toast.ts                |  191 +
+ client/src/index.css                         |  329 +
+ client/src/lib/queryClient.ts                |   57 +
+ client/src/lib/utils.ts                      |    6 +
+ client/src/main.tsx                          |    5 +
+ client/src/pages/not-found.tsx               |   21 +
+ components.json                              |   20 +
+ drizzle.config.ts                            |   14 +
+ package-lock.json                            | 8687 ++++++++++++++++++++++++++
+ package.json                                 |  111 +
+ postcss.config.js                            |    6 +
+ script/build.ts                              |   67 +
+ server/index.ts                              |  103 +
+ server/routes.ts                             |   16 +
+ server/static.ts                             |   19 +
+ server/storage.ts                            |   38 +
+ server/vite.ts                               |   58 +
+ shared/schema.ts                             |   18 +
+ tailwind.config.ts                           |  107 +
+ tsconfig.json                                |   23 +
+ vite.config.ts                               |   40 +
+ 74 files changed, 14798 insertions(+)
+
+d9ab64e 2026-01-26 01:16:29 +0000 ervinremus <53735858-ervinremus@users.noreply.replit.com> Initial commit
+ ...Artificiala-22012024_clean_final_1769390135238.pdf | Bin 0 -> 2701617 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+origin/main@{2026-01-29 21:25:55 +0000} 86b0ef9 2026-01-29 21:25:54 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge remote changes
+main@{2026-01-29 21:25:54 +0000} 86b0ef9 2026-01-29 21:25:54 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge remote changes
+HEAD@{2026-01-29 21:25:54 +0000} 86b0ef9 2026-01-29 21:25:54 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge remote changes
+main@{2026-01-29 21:21:06 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 21:21:06 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+main@{2026-01-29 21:18:55 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 21:18:55 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 21:17:11 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+origin/main@{2026-01-29 11:50:01 +0000} 84dedf8 2026-01-29 11:48:40 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #6 from ervinremus2019-wq/replit-agent
+origin/replit-agent@{2026-01-29 11:50:01 +0000} f4e6f28 2026-01-29 11:46:33 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #5 from ervinremus2019-wq/main
+HEAD@{2026-01-29 11:49:53 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+origin/replit-agent@{2026-01-29 11:43:44 +0000} ab49313 2026-01-29 11:41:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #3 from ervinremus2019-wq/main
+HEAD@{2026-01-29 11:40:18 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 11:38:07 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 11:37:32 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+origin/main@{2026-01-29 11:36:06 +0000} a8acc4a 2026-01-29 11:35:58 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> MERGED
+origin/main@{2026-01-29 11:36:05 +0000} 900b00d 2026-01-29 09:57:33 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #2 from ervinremus2019-wq/replit-agent
+origin/replit-agent@{2026-01-29 11:36:05 +0000} be34efe 2026-01-29 09:55:53 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge branch 'main' into replit-agent
+HEAD@{2026-01-29 11:36:05 +0000} a8acc4a 2026-01-29 11:35:58 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> MERGED
+HEAD@{2026-01-29 11:36:05 +0000} a8acc4a 2026-01-29 11:35:58 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> MERGED
+HEAD@{2026-01-29 11:36:05 +0000} 900b00d 2026-01-29 09:57:33 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #2 from ervinremus2019-wq/replit-agent
+HEAD@{2026-01-29 11:35:58 +0000} f1e4ad4 2026-01-29 11:35:58 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> MERGED
+origin/main@{2026-01-29 09:43:45 +0000} 992be92 2026-01-29 09:43:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+origin/main@{2026-01-29 09:43:43 +0000} 1f8ebe0 2026-01-29 09:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Update README.md
+HEAD@{2026-01-29 09:43:43 +0000} 992be92 2026-01-29 09:43:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+HEAD@{2026-01-29 09:43:43 +0000} 992be92 2026-01-29 09:43:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+HEAD@{2026-01-29 09:43:43 +0000} 8710e8f 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 09:43:43 +0000} 1f8ebe0 2026-01-29 09:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Update README.md
+HEAD@{2026-01-29 09:43:39 +0000} e5cd42a 2026-01-29 09:43:39 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+main@{2026-01-29 09:43:19 +0000} 65d0543 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+gitsafe-backup/main@{2026-01-29 09:43:19 +0000} af7d390 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+HEAD@{2026-01-29 09:43:19 +0000} af7d390 2026-01-29 09:43:19 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add global legal mandate and enforcement clauses to project license and readme
+origin/main@{2026-01-29 09:32:51 +0000} 159bc81 2026-01-29 09:32:39 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add legal statements to project license and readme files
+main@{2026-01-29 09:32:39 +0000} 5397743 2026-01-29 09:32:39 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add legal statements to project license and readme files
+gitsafe-backup/main@{2026-01-29 09:32:39 +0000} 159bc81 2026-01-29 09:32:39 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add legal statements to project license and readme files
+HEAD@{2026-01-29 09:32:39 +0000} 159bc81 2026-01-29 09:32:39 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add legal statements to project license and readme files
+origin/main@{2026-01-29 09:27:27 +0000} 196d3d8 2026-01-29 09:27:15 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+HEAD@{2026-01-29 09:27:15 +0000} 196d3d8 2026-01-29 09:27:15 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> merge
+main@{2026-01-29 09:27:08 +0000} 0a48b31 2026-01-29 09:27:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add note to readme about a terrorist group and human rights violations
+gitsafe-backup/main@{2026-01-29 09:27:08 +0000} 529c97f 2026-01-29 09:27:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add note to readme about a terrorist group and human rights violations
+HEAD@{2026-01-29 09:27:08 +0000} 529c97f 2026-01-29 09:27:08 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add note to readme about a terrorist group and human rights violations
+main@{2026-01-29 09:25:17 +0000} 75a5e29 2026-01-29 09:25:17 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add project status note to the readme file
+gitsafe-backup/main@{2026-01-29 09:25:17 +0000} 9ed7d00 2026-01-29 09:25:16 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add project status note to the readme file
+HEAD@{2026-01-29 09:25:16 +0000} 9ed7d00 2026-01-29 09:25:16 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Add project status note to the readme file
+origin/main@{2026-01-29 09:16:27 +0000} 6be3ad1 2026-01-29 09:14:56 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Adjust security settings to improve application compatibility
+origin/replit-agent@{2026-01-29 09:16:23 +0000} 1ab0aff 2026-01-27 02:36:20 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Enhance application security by hardening content policies and suppressing all console output
+origin@{2026-01-29 09:16:20 +0000} f145de0 2026-01-27 02:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #1 from ervinremus2019-wq/replit-agent
+main@{2026-01-29 09:14:57 +0000} 2d89089 2026-01-29 09:14:57 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Adjust security settings to improve application compatibility
+gitsafe-backup/main@{2026-01-29 09:14:57 +0000} 6be3ad1 2026-01-29 09:14:56 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Adjust security settings to improve application compatibility
+HEAD@{2026-01-29 09:14:56 +0000} 6be3ad1 2026-01-29 09:14:56 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Adjust security settings to improve application compatibility
+gitsafe-backup/main@{2026-01-29 09:12:08 +0000} 26959c8 2026-01-29 09:12:07 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Saved progress at the end of the loop
+main@{2026-01-29 09:12:07 +0000} 60db867 2026-01-29 09:12:07 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Saved progress at the end of the loop
+HEAD@{2026-01-29 09:12:07 +0000} 26959c8 2026-01-29 09:12:07 +0000 ervinrado210 <53744672-ervinrado210@users.noreply.replit.com> Saved progress at the end of the loop
+origin/main@{2026-01-29 09:10:01 +0000} f145de0 2026-01-27 02:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #1 from ervinremus2019-wq/replit-agent
+HEAD@{2026-01-29 09:10:01 +0000} f145de0 2026-01-27 02:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #1 from ervinremus2019-wq/replit-agent
+HEAD@{2026-01-29 09:10:01 +0000} f145de0 2026-01-27 02:39:44 +0000 Ervin Remus Radosavlevici <ervinremus2019@gmail.com> Merge pull request #1 from ervinremus2019-wq/replit-agentdangling commit f1e4ad4a164a332d68d39059baef495a060a5c18
+dangling tree 30a1d4c1af251c3e1f4b80c352947f384c6b67ef
+dangling tree 4ff5691c1805e3bc56a99131dffab5e1658a5f32
+dangling commit e5cd42a4dca9eba773543397eda320c68e1927e8
+dangling tree 6c3f4343ffc27f4c38b76ace79df363e1eea9a35
+dangling commit e86748f5a5c57b6c8873714c2f457bd7069b420c
+user.email=ervinremus2019@gmail.com
+user.name=Ervin Remus Radosavlevici
