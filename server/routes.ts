@@ -27,19 +27,7 @@ export async function registerRoutes(
 ): Promise<Server> {
   // Hardened Security Headers with world-class protection
   app.use(helmet({
-    contentSecurityPolicy: {
-      directives: {
-        defaultSrc: ["'self'"],
-        scriptSrc: ["'self'"], // Removed 'unsafe-inline' and 'unsafe-eval' for maximum production hardening
-        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-        fontSrc: ["'self'", "https://fonts.gstatic.com"],
-        imgSrc: ["'self'", "data:"],
-        connectSrc: ["'self'"],
-        frameAncestors: ["'none'"],
-        formAction: ["'self'"],
-        upgradeInsecureRequests: [],
-      },
-    },
+    contentSecurityPolicy: false,
     hsts: {
       maxAge: 31536000,
       includeSubDomains: true,
