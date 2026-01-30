@@ -47,8 +47,8 @@ export default function Home() {
             <AlertTriangle className="h-4 w-4 text-amber-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-extrabold text-foreground">Locked</div>
-            <CardDescription className="mt-1 text-foreground/70 font-medium">System in archive mode</CardDescription>
+            <div className="text-3xl font-extrabold text-foreground">Operational</div>
+            <CardDescription className="mt-1 text-foreground/70 font-medium">Production active & secure</CardDescription>
           </CardContent>
         </Card>
 
