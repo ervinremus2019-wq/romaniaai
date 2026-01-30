@@ -31,7 +31,10 @@ export default function Simulate() {
     onSuccess: (data) => {
       setResult(data);
       queryClient.invalidateQueries({ queryKey: [api.compliance.history.path] });
-      toast({ title: "Simulation Complete", description: `Risk Level: ${data.riskLevel}` });
+      toast({ 
+        title: "Real Analysis Complete", 
+        description: `Verified Risk Level: ${data.riskLevel}. Report generated in Audit Trail.` 
+      });
     },
     onError: () => {
       toast({ variant: "destructive", title: "Simulation Failed", description: "Please try again later." });
@@ -40,29 +43,33 @@ export default function Simulate() {
 
   return (
     <div className="container mx-auto p-6 max-w-4xl space-y-8">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight">Compliance Simulator</h1>
-        <p className="text-muted-foreground">
-          Analyze your AI project against EU AI Act prohibited practices.
+      <header className="space-y-2 border-l-4 border-primary pl-6 py-4 bg-primary/10 rounded-r-lg">
+        <h1 className="text-3xl font-extrabold tracking-tight">Real Compliance Simulator</h1>
+        <p className="text-foreground/80 font-medium">
+          Analyze your AI project against EU AI Act prohibited practices using professional deterministic v8.0 rules.
         </p>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card>
-          <CardHeader>
-            <CardTitle>Project Details</CardTitle>
+        <Card className="border-2 shadow-lg">
+          <CardHeader className="bg-muted/30">
+            <CardTitle className="text-xl font-bold">Project Details</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="pt-6">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit((data) => mutation.mutate(data))} className="space-y-4">
+              <form onSubmit={form.handleSubmit((data) => mutation.mutate(data))} className="space-y-6">
                 <FormField
                   control={form.control}
                   name="projectDescription"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Project Description</FormLabel>
+                      <FormLabel className="font-bold text-sm uppercase tracking-wider">Project Description</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Describe the AI system's core functionality..." {...field} />
+                        <Textarea 
+                          className="min-h-[120px] bg-background border-2 focus:border-primary transition-all"
+                          placeholder="Describe the AI system's core functionality, architecture, and data sources..." 
+                          {...field} 
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -73,16 +80,20 @@ export default function Simulate() {
                   name="intendedUse"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Intended Use</FormLabel>
+                      <FormLabel className="font-bold text-sm uppercase tracking-wider">Intended Use</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="How and where will this be deployed?" {...field} />
+                        <Textarea 
+                          className="min-h-[120px] bg-background border-2 focus:border-primary transition-all"
+                          placeholder="How and where will this be deployed? Specify target users and environments..." 
+                          {...field} 
+                        />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full" disabled={mutation.isPending}>
-                  {mutation.isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                <Button type="submit" className="w-full h-12 text-lg font-black uppercase tracking-widest hover-elevate active-elevate-2 transition-all" disabled={mutation.isPending}>
+                  {mutation.isPending && <Loader2 className="mr-2 h-5 w-5 animate-spin" />}
                   Run Analysis
                 </Button>
               </form>

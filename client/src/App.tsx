@@ -14,7 +14,7 @@ import { Shield, Home as HomeIcon, BookOpen, AlertCircle } from "lucide-react";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: HomeIcon },
-  { name: "Real Compliance Analysis", href: "/simulate", icon: Shield },
+  { name: "Real Compliance Simulator", href: "/simulate", icon: Shield },
   { name: "Audit Trail", href: "/audit", icon: BookOpen },
 ];
 
