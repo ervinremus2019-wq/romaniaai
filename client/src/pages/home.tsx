@@ -54,15 +54,15 @@ export default function Home() {
 
         <Card className="border-l-4 border-l-purple-600 shadow-md bg-card border-t border-r border-b">
           <CardHeader className="pb-2 flex flex-row items-center justify-between">
-            <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">Professional System Grid</CardTitle>
+            <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">Autonomous Enterprise Grid</CardTitle>
             <LayoutDashboard className="h-4 w-4 text-purple-600" />
           </CardHeader>
           <CardContent>
             <div className="text-sm space-y-1">
               <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Port:</span> <span className="font-black">5000</span></div>
               <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Status:</span> <span className="text-green-600 font-black">UNLOCKED/ACTIVE</span></div>
-              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Sync:</span> <span className="font-black">SYNCHRONIZED</span></div>
-              <div className="flex justify-between border-t border-border/50 pt-1 mt-1"><span className="text-muted-foreground font-bold uppercase text-[10px]">Features:</span> <span className="font-black">PRO v8.0</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Security:</span> <span className="font-black">AUTONOMOUS</span></div>
+              <div className="flex justify-between border-t border-border/50 pt-1 mt-1"><span className="text-muted-foreground font-bold uppercase text-[10px]">Enterprise:</span> <span className="font-black text-primary">WORLD-WIDE v8.0</span></div>
             </div>
           </CardContent>
         </Card>
@@ -118,13 +118,13 @@ export default function Home() {
           
           <Card className="bg-primary/20 border-2 border-primary/40 shadow-md">
             <CardHeader>
-              <CardTitle className="text-sm font-black uppercase tracking-widest text-primary/90">Enterprise Professional Suite</CardTitle>
+              <CardTitle className="text-sm font-black uppercase tracking-widest text-primary/90">Autonomous Enterprise Suite</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  "Real-Time Audit", "Global Sync", "Threat Analysis", "Legal Uplink",
-                  "Auto-Flagging", "Deterministic v8", "Zero-Trust Mesh", "Immutable Logs"
+                  "Autonomous Security", "World-Wide Sync", "Autonomous Fixing", "Legal Uplink",
+                  "Auto-Flagging", "Enterprise v8", "Zero-Trust Mesh", "Immutable Logs"
                 ].map((feat) => (
                   <div key={feat} className="flex items-center gap-2 p-2 rounded bg-background border border-primary/10">
                     <CheckCircle className="h-3 w-3 text-primary" />
