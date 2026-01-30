@@ -16,6 +16,12 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
+**Enterprise Parity & Synchronization**
+- The entire workspace is synchronized with the **Autonomous World-Wide Enterprise Architecture**.
+- Development and production environments share identical hardening, security protocols, and deterministic v8.0 rules.
+- Autonomous fixing and security modules are active across the entire project lifecycle.
+- **Ownership**: Ervin Remus Radosavlevici (Verified).
+
 **Frontend Architecture**
 - React 18 with TypeScript, built using Vite
 - Routing handled by Wouter (lightweight alternative to React Router)
@@ -23,6 +29,7 @@ Preferred communication style: Simple, everyday language.
 - UI components from shadcn/ui built on Radix UI primitives
 - Styling with Tailwind CSS using CSS variables for theming
 - Form handling with React Hook Form and Zod validation
+- **Sync**: Development environment uses identical production styles and high-contrast security command center UI.
 
 **Backend Architecture**
 - Express.js 5 on Node.js with TypeScript
@@ -30,7 +37,8 @@ Preferred communication style: Simple, everyday language.
 - In-memory storage implementation (MemStorage class) with interface for future database migration
 - Security hardening via Helmet.js middleware with strict CSP, HSTS, and XSS protection
 - Rate limiting with express-rate-limit for API endpoints
-- All console logging suppressed in both client and server for security
+- **Autonomous Security**: Self-healing diagnostic modules and autonomous threat detection enabled.
+- All console logging suppressed in both client and server for security.
 
 **Data Layer**
 - Drizzle ORM configured for PostgreSQL (schema defined, database provisioning expected)
