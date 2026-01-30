@@ -1,0 +1,24 @@
+ /home/runner/workspace$: No such file or directory
+error: reading from the database at '/nix/store/8mqmbb05zg3b5x7yb3bwxfcq5klgzb6i-replit-nix-locate/nix-index-25_05/files' failed: I/O error: No such file or directory (os error 2).
+This may be caused by a corrupt or missing database, try (re)running `nix-index` to generate the database. 
+If the error persists please file a bug report at https://github.com/nix-community/nix-index.
+bash: Enumerating: command not found
+bash: syntax error near unexpected token `('
+error: reading from the database at '/nix/store/8mqmbb05zg3b5x7yb3bwxfcq5klgzb6i-replit-nix-locate/nix-index-25_05/files' failed: I/O error: No such file or directory (os error 2).
+This may be caused by a corrupt or missing database, try (re)running `nix-index` to generate the database. 
+If the error persists please file a bug report at https://github.com/nix-community/nix-index.
+bash: Delta: command not found
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+error: reading from the database at '/nix/store/8mqmbb05zg3b5x7yb3bwxfcq5klgzb6i-replit-nix-locate/nix-index-25_05/files' failed: I/O error: No such file or directory (os error 2).
+This may be caused by a corrupt or missing database, try (re)running `nix-index` to generate the database. 
+If the error persists please file a bug report at https://github.com/nix-community/nix-index.
+bash: To: command not found
+bash: syntax error near unexpected token `('
+error: reading from the database at '/nix/store/8mqmbb05zg3b5x7yb3bwxfcq5klgzb6i-replit-nix-locate/nix-index-25_05/files' failed: I/O error: No such file or directory (os error 2).
+This may be caused by a corrupt or missing database, try (re)running `nix-index` to generate the database. 
+If the error persists please file a bug report at https://github.com/nix-community/nix-index.
+bash: error:: command not found
+~/workspace$ 
