@@ -60,8 +60,8 @@ export default function Home() {
           <CardContent>
             <div className="text-sm space-y-1">
               <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Port:</span> <span className="font-black">5000</span></div>
-              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Status:</span> <span className="text-red-600 font-black">LOCKED/INTERNAL</span></div>
-              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Sync:</span> <span className="font-black">DISABLED</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Status:</span> <span className="text-green-600 font-black">UNLOCKED/ACTIVE</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Sync:</span> <span className="font-black">SYNCHRONIZED</span></div>
             </div>
           </CardContent>
         </Card>

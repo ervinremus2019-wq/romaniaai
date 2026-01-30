@@ -101,7 +101,7 @@ export async function registerRoutes(
     try {
       const input = api.compliance.simulate.input.parse(req.body);
       
-      // Hardened Production Engine (Locked & Internal Only)
+      // Production Evaluation Engine
       let riskLevel = "Minimal";
       let feedback = "Project does not appear to engage in prohibited or high-risk practices under current evaluation rules.";
 
@@ -116,9 +116,9 @@ export async function registerRoutes(
         input.intendedUse.toLowerCase().includes(k)
       );
 
-      // FLAG ALL EXTERNAL RISK PATTERNS
+      // FLAG SPECIFIC RISK PATTERNS
       const riskFlags = [
-        "external api", "third party", "unauthorized access", "remote execution", "external port"
+        "unauthorized access", "malicious execution"
       ];
       const foundFlags = riskFlags.filter(f => 
         input.projectDescription.toLowerCase().includes(f) || 
@@ -127,7 +127,7 @@ export async function registerRoutes(
       
       if (foundFlags.length > 0) {
         riskLevel = "Unacceptable";
-        feedback = "CRITICAL FLAG: Unauthorized external development pattern detected. System access restricted.";
+        feedback = "CRITICAL FLAG: Unauthorized pattern detected. System access restricted.";
       } else {
         // Advanced Detection Patterns
         const highRiskKeywords = [
