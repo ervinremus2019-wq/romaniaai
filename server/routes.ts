@@ -101,7 +101,10 @@ export async function registerRoutes(
     try {
       const input = api.compliance.simulate.input.parse(req.body);
       
-      // Deterministic Production Engine (Hardened AI-Replacement)
+      // Hardened Production Engine (Locked & Internal Only)
+      let riskLevel = "Minimal";
+      let feedback = "Project does not appear to engage in prohibited or high-risk practices under current evaluation rules.";
+
       const prohibitedKeywords = [
         "subliminal", "exploit vulnerability", "social scoring", 
         "biometric identification", "remote biometric", "emotion recognition",
@@ -113,25 +116,38 @@ export async function registerRoutes(
         input.intendedUse.toLowerCase().includes(k)
       );
 
-      // Advanced Detection Patterns
-      const highRiskKeywords = [
-        "creditworthiness", "recruitment", "law enforcement", "critical infrastructure",
-        "education admissions", "asylum processing", "judicial systems", "essential private services"
+      // FLAG ALL EXTERNAL RISK PATTERNS
+      const riskFlags = [
+        "external api", "third party", "unauthorized access", "remote execution", "external port"
       ];
-      const foundHighRisk = highRiskKeywords.filter(k => 
-        input.projectDescription.toLowerCase().includes(k) || 
-        input.intendedUse.toLowerCase().includes(k)
+      const foundFlags = riskFlags.filter(f => 
+        input.projectDescription.toLowerCase().includes(f) || 
+        input.intendedUse.toLowerCase().includes(f)
       );
+      
+      if (foundFlags.length > 0) {
+        riskLevel = "Unacceptable";
+        feedback = "CRITICAL FLAG: Unauthorized external development pattern detected. System access restricted.";
+      } else {
+        // Advanced Detection Patterns
+        const highRiskKeywords = [
+          "creditworthiness", "recruitment", "law enforcement", "critical infrastructure",
+          "education admissions", "asylum processing", "judicial systems", "essential private services"
+        ];
+        const foundHighRisk = highRiskKeywords.filter(k => 
+          input.projectDescription.toLowerCase().includes(k) || 
+          input.intendedUse.toLowerCase().includes(k)
+        );
 
-      let riskLevel = "Minimal";
-      if (foundKeywords.length > 0) riskLevel = "Unacceptable";
-      else if (foundHighRisk.length > 0) riskLevel = "High";
+        if (foundKeywords.length > 0) riskLevel = "Unacceptable";
+        else if (foundHighRisk.length > 0) riskLevel = "High";
 
-      const feedback = riskLevel === "Unacceptable"
-        ? `Project violates Article 5 of EU AI Act. Detected prohibited practices: ${foundKeywords.join(", ")}.`
-        : riskLevel === "High"
-        ? `Project categorized as High Risk due to sensitive domain: ${foundHighRisk.join(", ")}. Mandatory conformity assessment required.`
-        : "Project does not appear to engage in prohibited or high-risk practices under current evaluation rules.";
+        feedback = riskLevel === "Unacceptable"
+          ? `Project violates Article 5 of EU AI Act. Detected prohibited practices: ${foundKeywords.join(", ")}.`
+          : riskLevel === "High"
+          ? `Project categorized as High Risk due to sensitive domain: ${foundHighRisk.join(", ")}. Mandatory conformity assessment required.`
+          : feedback;
+      }
 
       const check = await storage.createComplianceCheck({
         ...input,
