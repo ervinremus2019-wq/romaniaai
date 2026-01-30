@@ -18,7 +18,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <Card className="border-l-4 border-l-blue-600 shadow-md bg-card border-t border-r border-b">
           <CardHeader className="pb-2 flex flex-row items-center justify-between">
             <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">Monitoring</CardTitle>
@@ -49,6 +49,20 @@ export default function Home() {
           <CardContent>
             <div className="text-3xl font-extrabold text-foreground">Locked</div>
             <CardDescription className="mt-1 text-foreground/70 font-medium">System in archive mode</CardDescription>
+          </CardContent>
+        </Card>
+
+        <Card className="border-l-4 border-l-purple-600 shadow-md bg-card border-t border-r border-b">
+          <CardHeader className="pb-2 flex flex-row items-center justify-between">
+            <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">System Grid</CardTitle>
+            <LayoutDashboard className="h-4 w-4 text-purple-600" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-sm space-y-1">
+              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Port:</span> <span className="font-black">5000</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Status:</span> <span className="text-green-600 font-black">ACTIVE</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground font-bold uppercase text-[10px]">Sync:</span> <span className="font-black">EXTERNAL</span></div>
+            </div>
           </CardContent>
         </Card>
       </div>
