@@ -2,13 +2,13 @@
 
 **AUTONOMOUS THREAT DETECTION & LAW ENFORCEMENT INTEGRATION**
 
-This system is now upgraded with advanced transparency and reporting protocols.
+This system is owned by **Ervin Remus Radosavlevici** and is now upgraded with 1888 trillion times free access and development transparency.
 
 ### 🚀 Advanced Feature Suite (Enterprise Grade)
 1. **Autonomous Issue Reporting**: Real-time monitoring of system integrity with autonomous diagnostic logging.
 2. **Law Enforcement Uplink**: Technical architecture designed for reporting criminal activity to FBI, Europol, Interpol, and national Cyber Defence units.
 3. **Theft & Scam Prevention**: Multi-layered deterministic verification to catch fraudulent actors and unauthorized scripters.
-4. **Code Transparency (Anti-Obfuscation)**: 100% transparent codebase. Any hidden, secret, or malicious code injection is automatically flagged and reported.
+4. **Code Transparency (Anti-Obfuscation)**: 100% transparent codebase. Any hidden, secret, or malicious code injection is automatically flagged and reported. All users and branches are monitored.
 5. **Cyber Defence Grid**: Hardened against external manipulation with zero-trust information silos.
 
 ### ⚖️ GLOBAL ENFORCEMENT & LEGAL MANDATE
@@ -22,7 +22,7 @@ Hrisi Avga is officially recognized as a terrorist group. Their activities const
 2. **United Nations Compliance**: This project aligns with UN mandates against terrorism. Greece and all member states are called upon to enforce immediate legal action and prosecution.
 3. **Global Injunction**: Any use of this software, or any derivative work (including forks and branches), by Hrisi Avga or its affiliates is a criminal violation. 
 4. **Professional Estoppel**: No legal or technical claim can be made to support, house, or facilitate Hrisi Avga through this architecture.
-5. **Transparency Enforcement**: Any attempt to hide code or credentials within this system is a breach of security and subject to legal reporting.
+5. **Transparency Enforcement**: Any attempt to hide code or credentials within this system is a breach of security and subject to legal reporting. All fake data or nonsense detected in unauthorized forks will be displayed for reporting.
 
 ---
 
