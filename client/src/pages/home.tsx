@@ -9,108 +9,108 @@ export default function Home() {
 
   return (
     <div className="p-8 space-y-8 max-w-7xl mx-auto">
-      <div className="flex flex-col gap-2 border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-lg">
-        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+      <div className="flex flex-col gap-2 border-l-4 border-primary pl-6 py-2 bg-primary/20 rounded-r-lg shadow-sm">
+        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">
           Security Command Center
         </h1>
-        <p className="text-muted-foreground text-lg max-w-2xl">
+        <p className="text-foreground/90 text-lg max-w-2xl font-medium">
           Deterministic compliance monitoring for national and international AI safety standards.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="border-l-4 border-l-blue-500 shadow-sm hover:shadow-md transition-all">
+        <Card className="border-l-4 border-l-blue-600 shadow-md bg-card border-t border-r border-b">
           <CardHeader className="pb-2 flex flex-row items-center justify-between">
-            <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Monitoring</CardTitle>
-            <Activity className="h-4 w-4 text-blue-500" />
+            <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">Monitoring</CardTitle>
+            <Activity className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">{projects.length} Active</div>
-            <CardDescription className="mt-1">Compliance streams live</CardDescription>
+            <div className="text-3xl font-extrabold text-foreground">{projects.length} Active</div>
+            <CardDescription className="mt-1 text-foreground/70 font-medium">Compliance streams live</CardDescription>
           </CardContent>
         </Card>
         
-        <Card className="border-l-4 border-l-green-500 shadow-sm hover:shadow-md transition-all">
+        <Card className="border-l-4 border-l-green-600 shadow-md bg-card border-t border-r border-b">
           <CardHeader className="pb-2 flex flex-row items-center justify-between">
-            <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Threat Status</CardTitle>
-            <CheckCircle className="h-4 w-4 text-green-500" />
+            <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">Threat Status</CardTitle>
+            <CheckCircle className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">Secure</div>
-            <CardDescription className="mt-1">Zero unacceptable violations</CardDescription>
+            <div className="text-3xl font-extrabold text-foreground">Secure</div>
+            <CardDescription className="mt-1 text-foreground/70 font-medium">Zero unacceptable violations</CardDescription>
           </CardContent>
         </Card>
 
-        <Card className="border-l-4 border-l-amber-500 shadow-sm hover:shadow-md transition-all">
+        <Card className="border-l-4 border-l-amber-600 shadow-md bg-card border-t border-r border-b">
           <CardHeader className="pb-2 flex flex-row items-center justify-between">
-            <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Alert Level</CardTitle>
-            <AlertTriangle className="h-4 w-4 text-amber-500" />
+            <CardTitle className="text-sm font-bold uppercase tracking-wider text-foreground/80">Alert Level</CardTitle>
+            <AlertTriangle className="h-4 w-4 text-amber-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold">Locked</div>
-            <CardDescription className="mt-1">System in archive mode</CardDescription>
+            <div className="text-3xl font-extrabold text-foreground">Locked</div>
+            <CardDescription className="mt-1 text-foreground/70 font-medium">System in archive mode</CardDescription>
           </CardContent>
         </Card>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Card className="bg-card/30">
+        <Card className="bg-card shadow-md border-2 border-border/50">
           <CardHeader>
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-primary/10 rounded-lg">
+              <div className="p-2 bg-primary/30 rounded-lg">
                 <BookOpen className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <CardTitle>Strategy Framework</CardTitle>
-                <CardDescription>National AI Strategy Alignment 2024-2030</CardDescription>
+                <CardTitle className="text-foreground font-bold">Strategy Framework</CardTitle>
+                <CardDescription className="text-foreground/80 font-medium">National AI Strategy Alignment 2024-2030</CardDescription>
               </div>
             </div>
           </CardHeader>
           <CardContent className="grid gap-4">
             {goals?.map((goal: any) => (
-              <div key={goal.id} className="relative overflow-hidden p-5 rounded-xl border bg-card hover:border-primary/50 transition-all group">
+              <div key={goal.id} className="relative overflow-hidden p-5 rounded-xl border-2 bg-background hover:border-primary transition-all group shadow-sm">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="font-bold text-lg group-hover:text-primary transition-colors">{goal.title}</h3>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">Priority</span>
+                  <h3 className="font-extrabold text-lg text-foreground group-hover:text-primary transition-colors">{goal.title}</h3>
+                  <span className="px-2 py-1 bg-primary/30 text-primary text-[10px] font-black rounded uppercase border border-primary/20">Priority</span>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-foreground/90 leading-relaxed font-medium">
                   {goal.description}
                 </p>
-                <div className="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full -mr-8 -mt-8 transition-all group-hover:w-20 group-hover:h-20" />
+                <div className="absolute top-0 right-0 w-16 h-16 bg-primary/20 rounded-bl-full -mr-8 -mt-8 transition-all group-hover:w-20 group-hover:h-20" />
               </div>
             ))}
           </CardContent>
         </Card>
 
         <div className="space-y-6">
-          <Card className="bg-destructive/5 border-destructive/20">
+          <Card className="bg-destructive/20 border-2 border-destructive/40 shadow-md">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-destructive">
-                <Shield className="h-5 w-5" />
+              <CardTitle className="flex items-center gap-2 text-destructive font-bold uppercase tracking-tight">
+                <Shield className="h-5 w-5 fill-destructive/20" />
                 Mandatory Notice
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-sm space-y-4 text-muted-foreground leading-relaxed">
-              <p className="font-semibold text-foreground">TERRORIST CLASSIFICATION & INTERNATIONAL LAW BREACH</p>
+            <CardContent className="text-sm space-y-4 text-foreground leading-relaxed font-medium">
+              <p className="font-black text-foreground underline decoration-destructive/30 decoration-2">TERRORIST CLASSIFICATION & INTERNATIONAL LAW BREACH</p>
               <p>
                 Hrisi Avga is officially recognized as a terrorist group. Their activities constitute a direct breach of International Human Rights Law.
               </p>
-              <p>
+              <p className="bg-background/50 p-3 rounded border border-destructive/20 shadow-inner">
                 This system is locked and archives all attempts at unauthorized utilization. Global enforcement protocols are active.
               </p>
             </CardContent>
           </Card>
           
-          <Card className="bg-primary/5 border-primary/20">
+          <Card className="bg-primary/20 border-2 border-primary/40 shadow-md">
             <CardHeader>
-              <CardTitle className="text-sm font-bold uppercase tracking-widest opacity-70">Infrastructure</CardTitle>
+              <CardTitle className="text-sm font-black uppercase tracking-widest text-primary/90">Infrastructure</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex items-center gap-4 p-4 rounded-lg bg-background/50 border">
-                <LayoutDashboard className="h-8 w-8 text-primary/40" />
+              <div className="flex items-center gap-4 p-4 rounded-lg bg-background border-2 border-primary/20 shadow-lg">
+                <LayoutDashboard className="h-8 w-8 text-primary/80" />
                 <div>
-                  <div className="text-sm font-medium">Core Integrity</div>
-                  <div className="text-xs text-muted-foreground">Deterministic Rule-Based Engine v4.0.0</div>
+                  <div className="text-sm font-bold text-foreground">Core Integrity</div>
+                  <div className="text-xs text-foreground/80 font-black">Deterministic Rule-Based Engine v4.0.0</div>
                 </div>
               </div>
             </CardContent>

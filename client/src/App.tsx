@@ -73,10 +73,10 @@ function App() {
           <div className="flex h-screen w-full bg-background overflow-hidden">
             <AppSidebar />
             <main className="flex-1 flex flex-col min-w-0">
-              <header className="h-14 border-b flex items-center px-4 gap-4 bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+              <header className="h-14 border-b flex items-center px-4 gap-4 bg-card sticky top-0 z-50">
                 <SidebarTrigger />
                 <div className="h-4 w-[1px] bg-border" />
-                <div className="flex items-center gap-2 text-sm text-muted-foreground animate-pulse">
+                <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <AlertCircle className="h-4 w-4 text-destructive" />
                   <span className="font-medium">SYSTEM SECURED & LOCKED</span>
                 </div>
